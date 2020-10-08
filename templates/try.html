@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+{% block title %}Data{% endblock %}
+{% block body %}
+
+<h2> Email :</h2> 
+
+{{email}} 
+
+<h2>Age: </h2>
+
+{{age}}
+
+<div>
+<a class="btn btn-primary" href="/update" role="button">Update Data</a>
+
+<a class="btn btn-primary" href="/delete" role="button">Delete Data</a>
+</div>
+{% endblock %}
