@@ -18,7 +18,7 @@ import psycopg2.extras
 # Response object is WSGI application in itself and provides a much nicer way to create response
 
 
-# Shortly class is a WSGI application
+# Application class is a WSGI application
 class Application(object):
 
     def __init__(self,config):
