@@ -3,20 +3,43 @@
 {% block body %}
 
 
-<form action='/update_change' method='post'>
+<form action='/update_change' method='post' enctype="multipart/form-data">
   <div class="form-row">
     <div class="col-md-6 mb-3">
-      <label for="validationDefault01">Email</label>
-      <input type="text" class="form-control" id="validationDefault01" name="email" value={{email}} required>
+      <label for="validationDefault03">Name</label>
+      <input type="text" class="form-control" id="validationDefault03" name="name" value ={{up['name']}} required>
     </div>
-  </div>
-  <div class="form-row"><div class="col-md-6 mb-3">
+  </div> 
+
+  <div class="form-row">
     <div class="col-md-6 mb-3">
       <label for="validationDefault03">Age</label>
-      <input type="text" class="form-control" id="validationDefault03" name="age" value ={{age}} required>
+      <input type="text" class="form-control" id="validationDefault03" name="age" value ={{up['age']}} required>
     </div>
   </div>
 
+  <div class="form-row">
+    <div class="col-md-6 mb-3">
+      <label for="validationDefault03">Address</label>
+      <input type="text" class="form-control" id="validationDefault03" name="address" value ={{up['address']}} required>
+    </div>
+  </div>
+
+  <div class="form-row">
+    <div class="col-md-6 mb-3">
+      <label for="validationDefault03">Blood Group</label>
+      <input type="text" class="form-control" id="validationDefault03" name="blood" value ={{up['blood_group']}} required>
+    </div>
+  </div>
+
+  <div class="form-row">
+    <div class="col-md-6 mb-3">
+      <label for="validationDefault03">Phone Number</label>
+      <input type="text" class="form-control" id="validationDefault03" name="ph" value ={{up['ph']}} required>
+    </div>
+  </div>
+
+  <input type="file" name="uploaded_file">
   <button class="btn btn-primary" type="submit">Submit form</button>
 </form>
 

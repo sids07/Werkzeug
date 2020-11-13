@@ -1,0 +1,67 @@
+{% extends "layout.html" %}
+{% block body %}
+<style type="text/css">
+  /* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+/* Custom default button */
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritance from `body` */
+  background-color: #fff;
+  border: .05rem solid #fff;
+}
+
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+  background-color: #333;
+}
+
+body {
+  display: -ms-flexbox;
+  display: flex;
+  color: #fff;
+  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+}
+
+.cover-container {
+  max-width: 42em;
+}
+
+/*
+ * Cover
+ */
+.cover {
+  padding: 0 1.5rem;
+}
+.cover .btn-lg {
+  padding: .75rem 1.25rem;
+  font-weight: 700;
+}
+
+</style>
+
+<img src="static/blood.jpg" class="rounded mx-auto d-block" alt="Responsive image">
+  <main role="main" class="inner cover">
+    <h1 class="cover-heading">Find the appropriate Blood Doner.</h1>
+    <p class="lead">You don't have to be a doctor a save a Life. Every Blood doner is a life saver because the blood you donate give a life to other. Give the gift of the life, Donate Blood.</p>
+    <p class="lead">
+      <a href="/doner" class="btn btn-lg btn-secondary">Find Doner</a>
+    </p>
+  </main>
+
+{% endblock %}  
+  
