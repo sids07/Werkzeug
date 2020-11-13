@@ -1,0 +1,4 @@
+Werkzeug==0.16.0
+redis==3.5.3
+psycopg2==2.8.4
+Jinja2==2.10.3
